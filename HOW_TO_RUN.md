@@ -181,6 +181,35 @@ You need to download the following components:
 
 Download links are available in the [Hugging Face repository](https://huggingface.co/sand-ai/MAGI-1).
 
+## Web界面选项
+
+除了命令行版本，我还为您创建了两种Web界面：
+
+### 方案1：Gradio界面（推荐）
+```bash
+# 安装Gradio
+bash install_web_interface.sh
+
+# 运行Web界面
+python3 web_interface.py
+```
+
+### 方案2：Flask界面（轻量级）
+```bash
+# 安装Flask
+bash install_flask_interface.sh
+
+# 运行Web界面
+python3 simple_web_interface.py
+```
+
+两种界面都会在 `http://localhost:7860` 启动，提供：
+- 🎯 直观的模型选择和加载
+- 📝 友好的参数调整界面
+- 🎬 三种生成模式（T2V/I2V/V2V）
+- 📊 实时生成状态显示
+- 📥 便捷的视频下载功能
+
 ## Next Steps
 
 Once you have the model running:
@@ -188,3 +217,4 @@ Once you have the model running:
 - Adjust video resolution and length based on your hardware
 - Try the distilled models for faster inference
 - Explore the controllable generation features for advanced use cases
+- Use the Web interface for easier parameter adjustment and file management
